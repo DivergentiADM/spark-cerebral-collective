@@ -79,6 +79,7 @@ export default {
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-button': 'var(--gradient-button)',
         'gradient-background': 'var(--gradient-background)',
         'gradient-subtle': 'var(--gradient-subtle)',
         'gradient-card': 'var(--gradient-card)',
