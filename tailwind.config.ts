@@ -86,6 +86,7 @@ export default {
         'gradient-accent': 'var(--gradient-accent)',
         'gradient-creative': 'var(--gradient-creative)',
         'gradient-orange-soft': 'var(--gradient-orange-soft)',
+        'gradient-radial': 'var(--gradient-radial)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',
@@ -95,6 +96,7 @@ export default {
         'blue': 'var(--shadow-blue)',
         'orange': 'var(--shadow-orange)',
         'orange-vibrant': 'var(--shadow-orange-vibrant)',
+        'success-glow': 'var(--shadow-success-glow)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',
@@ -153,6 +155,10 @@ export default {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" }
         },
+        "spin-slow": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" }
+        },
         "counter-update": {
           "0%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.1)" },
@@ -172,6 +178,7 @@ export default {
         "atom-spin": "atom-spin 20s linear infinite",
         "energy-pulse": "energy-pulse 2s ease-in-out infinite",
         "float": "float 6s ease-in-out infinite",
+        "spin-slow": "spin-slow 8s linear infinite",
         "counter-update": "counter-update 0.3s ease-out",
         "enter": "fade-in 0.3s ease-out, scale-in 0.2s ease-out",
         "exit": "fade-out 0.3s ease-out, scale-out 0.2s ease-out"

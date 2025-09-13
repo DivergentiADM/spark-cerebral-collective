@@ -63,6 +63,7 @@ All colors MUST be HSL.
     --gradient-accent: linear-gradient(135deg, #00C4FF 0%, #8F00FF 100%);
     --gradient-creative: linear-gradient(135deg, #FF6600 0%, #FF00AA 100%);
     --gradient-orange-soft: linear-gradient(145deg, hsl(24 100% 95%) 0%, hsl(24 100% 90%) 100%);
+    --gradient-radial: radial-gradient(circle, var(--from), var(--to));
     
     /* Creative Edition Shadows */
     --shadow-glow: 0 0 50px hsl(270 100% 50% / 0.2);
@@ -72,6 +73,7 @@ All colors MUST be HSL.
     --shadow-blue: 0 0 40px hsl(197 100% 50% / 0.25);
     --shadow-orange: 0 0 40px hsl(24 100% 50% / 0.25);
     --shadow-orange-vibrant: 0 0 30px hsl(29 100% 50% / 0.3);
+    --shadow-success-glow: 0 0 20px hsl(151 100% 39% / 0.5);
     
     --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
     
