@@ -10,8 +10,20 @@ import {
   Zap, 
   LogIn,
   Menu,
-  X 
+  X,
+  Eye,
+  Heart,
+  GraduationCap,
+  HelpCircle,
+  Shield,
+  MapPin
 } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -71,12 +83,67 @@ const Header = () => {
               <a href="#casos" className="text-foreground/80 hover:text-foreground transition-colors story-link">
                 Casos
               </a>
-              <div className="relative group">
-                <button className="flex items-center text-foreground/80 hover:text-foreground transition-colors">
-                  Recursos
-                  <ChevronDown className="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-200" />
-                </button>
-              </div>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button className="flex items-center text-foreground/80 hover:text-foreground transition-colors group">
+                    Recursos
+                    <ChevronDown className="w-4 h-4 ml-1 group-data-[state=open]:rotate-180 transition-transform duration-200" />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent 
+                  className="w-80 p-2 bg-background/95 backdrop-blur-lg border border-border/50 shadow-card animate-fade-in"
+                  align="center"
+                  sideOffset={8}
+                >
+                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
+                    <Eye className="w-5 h-5 text-electric-violet mt-1 mr-3 group-hover:scale-110 transition-transform" />
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground mb-1">Building in Public</div>
+                      <div className="text-sm text-muted-foreground">Métricas reales y decisiones transparentes en tiempo real</div>
+                    </div>
+                  </DropdownMenuItem>
+                  
+                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
+                    <Heart className="w-5 h-5 text-bright-fuchsia mt-1 mr-3 group-hover:scale-110 transition-transform" />
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground mb-1">Alma del Equipo</div>
+                      <div className="text-sm text-muted-foreground">Conoce quiénes están detrás de COPYA y nuestra historia</div>
+                    </div>
+                  </DropdownMenuItem>
+                  
+                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
+                    <GraduationCap className="w-5 h-5 text-mediterranean-blue mt-1 mr-3 group-hover:scale-110 transition-transform" />
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground mb-1">COPYA Academy</div>
+                      <div className="text-sm text-muted-foreground">Educación premium gratuita para dominar la IA creativa</div>
+                    </div>
+                  </DropdownMenuItem>
+                  
+                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
+                    <HelpCircle className="w-5 h-5 text-financial-green mt-1 mr-3 group-hover:scale-110 transition-transform" />
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground mb-1">FAQ Completo</div>
+                      <div className="text-sm text-muted-foreground">Respuestas profundas sobre privacidad, uso y resultados</div>
+                    </div>
+                  </DropdownMenuItem>
+                  
+                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
+                    <Shield className="w-5 h-5 text-soft-yellow mt-1 mr-3 group-hover:scale-110 transition-transform" />
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground mb-1">Por qué COPYA</div>
+                      <div className="text-sm text-muted-foreground">Comparativas reales vs ChatGPT, sin login ni trucos</div>
+                    </div>
+                  </DropdownMenuItem>
+                  
+                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
+                    <MapPin className="w-5 h-5 text-electric-violet mt-1 mr-3 group-hover:scale-110 transition-transform" />
+                    <div className="flex-1">
+                      <div className="font-semibold text-foreground mb-1">Roadmap Público</div>
+                      <div className="text-sm text-muted-foreground">Explora próximas funciones y vota por nuevas ideas</div>
+                    </div>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </nav>
 
             {/* Actions Section */}
