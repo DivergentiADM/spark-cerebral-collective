@@ -82,8 +82,8 @@ const Header = () => {
             {/* Actions Section */}
             <div className="flex items-center space-x-4">
               {/* Brain Counter */}
-              <div className="hidden md:flex items-center space-x-2 bg-gradient-card border border-border/50 rounded-full px-4 py-2 shadow-card hover:shadow-glow transition-all duration-300">
-                <Brain className="w-4 h-4 text-brain-glow animate-energy-pulse" />
+              <div className="hidden md:flex items-center space-x-2 bg-gradient-card border border-bright-fuchsia/20 rounded-full px-4 py-2 shadow-fuchsia hover:shadow-intense transition-all duration-300">
+                <Brain className="w-4 h-4 text-bright-fuchsia animate-energy-pulse" />
                 <span className="text-sm font-semibold animate-counter-update">
                   {activeCount.toLocaleString()} mentes colectivas activas
                 </span>
@@ -93,14 +93,14 @@ const Header = () => {
               <Button 
                 variant="outline" 
                 size="sm"
-                className="hidden md:flex items-center border-border/50 hover:shadow-glow transition-all duration-300"
+                className="hidden md:flex items-center border-mediterranean-blue/50 text-mediterranean-blue hover:bg-mediterranean-blue hover:text-white hover:shadow-blue transition-all duration-300"
               >
                 <LogIn className="w-4 h-4 mr-2" />
                 Iniciar Sesión
               </Button>
               
               <Button 
-                className="bg-gradient-hero hover:shadow-intense transition-all duration-300 rounded-full font-semibold"
+                className="bg-gradient-hero hover:shadow-fuchsia transition-all duration-300 rounded-full font-semibold border-0"
                 size="sm"
               >
                 <Zap className="w-4 h-4 mr-2" />
@@ -123,19 +123,19 @@ const Header = () => {
           <div className="container mx-auto px-6 py-2">
             <div className="flex items-center justify-center space-x-8 text-sm">
               <div className="flex items-center space-x-2">
-                <Zap className="w-4 h-4 text-primary animate-energy-pulse" />
+                <Zap className="w-4 h-4 text-electric-violet animate-energy-pulse" />
                 <span className="text-muted-foreground">Motor CAG™ procesando ideas</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Users className="w-4 h-4 text-success-glow" />
+                <Users className="w-4 h-4 text-mediterranean-blue" />
                 <span className="text-muted-foreground">
                   <span className="font-semibold text-foreground">347</span> visionarios ejecutando ahora
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <TrendingUp className="w-4 h-4 text-success-glow" />
+                <TrendingUp className="w-4 h-4 text-financial-green" />
                 <span className="text-muted-foreground">
-                  Impacto colectivo: <span className="font-semibold text-success-glow">$2,847 USD</span>
+                  Impacto colectivo: <span className="font-semibold text-financial-green">$2,847 USD</span>
                 </span>
               </div>
             </div>
@@ -168,13 +168,13 @@ const Header = () => {
               <div className="pt-4 border-t border-border/50 space-y-2">
                 <Button 
                   variant="outline" 
-                  className="w-full justify-start"
+                  className="w-full justify-start border-mediterranean-blue/50 text-mediterranean-blue hover:bg-mediterranean-blue hover:text-white"
                 >
                   <LogIn className="w-4 h-4 mr-2" />
                   Iniciar Sesión
                 </Button>
                 <Button 
-                  className="w-full bg-gradient-hero hover:shadow-glow transition-all duration-300"
+                  className="w-full bg-gradient-hero hover:shadow-fuchsia transition-all duration-300 border-0"
                 >
                   <Zap className="w-4 h-4 mr-2" />
                   Comenzar

@@ -57,19 +57,33 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // COPYA Corporate Colors
+        'electric-violet': 'hsl(var(--electric-violet))',
+        'bright-fuchsia': 'hsl(var(--bright-fuchsia))',
+        'mediterranean-blue': 'hsl(var(--mediterranean-blue))',
+        'soft-yellow': 'hsl(var(--soft-yellow))',
+        'financial-green': 'hsl(var(--financial-green))',
+        'text-primary': 'hsl(var(--text-primary))',
+        
+        // Semantic Colors
         'brain-glow': 'var(--brain-glow)',
         'success-glow': 'var(--success-glow)',
         'warning-glow': 'var(--warning-glow)',
+        'accent-glow': 'var(--accent-glow)',
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-background': 'var(--gradient-background)',
         'gradient-subtle': 'var(--gradient-subtle)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-accent': 'var(--gradient-accent)',
       },
       boxShadow: {
         'glow': 'var(--shadow-glow)',
         'card': 'var(--shadow-card)',
         'intense': 'var(--shadow-intense)',
+        'fuchsia': 'var(--shadow-fuchsia)',
+        'blue': 'var(--shadow-blue)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',

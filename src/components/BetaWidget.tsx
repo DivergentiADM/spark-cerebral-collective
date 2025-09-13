@@ -44,13 +44,13 @@ const BetaWidget = () => {
           {/* Header */}
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
-              <Zap className="w-5 h-5 text-warning-glow animate-energy-pulse" />
+              <Zap className="w-5 h-5 text-soft-yellow animate-energy-pulse" />
               <span className="font-bold text-lg bg-gradient-hero bg-clip-text text-transparent">
                 Inner Circle
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Solo <span className="font-bold text-warning-glow">73 visionarios</span> restantes
+              Solo <span className="font-bold text-soft-yellow">73 visionarios</span> restantes
             </p>
           </div>
 
@@ -62,21 +62,21 @@ const BetaWidget = () => {
             </div>
             <div className="flex justify-center gap-2">
               <div className="text-center">
-                <div className="bg-primary text-primary-foreground rounded px-2 py-1 font-mono text-sm">
+                <div className="bg-electric-violet text-white rounded px-2 py-1 font-mono text-sm shadow-glow">
                   {timeLeft.hours.toString().padStart(2, '0')}
                 </div>
                 <div className="text-xs text-muted-foreground mt-1">hrs</div>
               </div>
-              <div className="self-center text-primary font-bold">:</div>
+              <div className="self-center text-electric-violet font-bold">:</div>
               <div className="text-center">
-                <div className="bg-primary text-primary-foreground rounded px-2 py-1 font-mono text-sm">
+                <div className="bg-electric-violet text-white rounded px-2 py-1 font-mono text-sm shadow-glow">
                   {timeLeft.minutes.toString().padStart(2, '0')}
                 </div>
                 <div className="text-xs text-muted-foreground mt-1">min</div>
               </div>
-              <div className="self-center text-primary font-bold">:</div>
+              <div className="self-center text-electric-violet font-bold">:</div>
               <div className="text-center">
-                <div className="bg-primary text-primary-foreground rounded px-2 py-1 font-mono text-sm animate-counter-update">
+                <div className="bg-electric-violet text-white rounded px-2 py-1 font-mono text-sm animate-counter-update shadow-glow">
                   {timeLeft.seconds.toString().padStart(2, '0')}
                 </div>
                 <div className="text-xs text-muted-foreground mt-1">seg</div>
@@ -87,22 +87,22 @@ const BetaWidget = () => {
           {/* Benefits */}
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-sm">
-              <div className="w-2 h-2 bg-success-glow rounded-full animate-energy-pulse"></div>
+              <div className="w-2 h-2 bg-financial-green rounded-full animate-energy-pulse"></div>
               <span className="text-muted-foreground">Acceso founder de por vida</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <div className="w-2 h-2 bg-success-glow rounded-full animate-energy-pulse"></div>
+              <div className="w-2 h-2 bg-financial-green rounded-full animate-energy-pulse"></div>
               <span className="text-muted-foreground">Mentoría privada incluida</span>
             </div>
             <div className="flex items-center gap-2 text-sm">
-              <div className="w-2 h-2 bg-success-glow rounded-full animate-energy-pulse"></div>
+              <div className="w-2 h-2 bg-financial-green rounded-full animate-energy-pulse"></div>
               <span className="text-muted-foreground">Cerebro personalizado gratis</span>
             </div>
           </div>
 
           {/* CTA */}
           <Button 
-            className="w-full bg-gradient-hero hover:shadow-glow transition-all duration-300 font-semibold"
+            className="w-full bg-gradient-hero hover:shadow-fuchsia transition-all duration-300 font-semibold border-0"
             size="sm"
           >
             <Users className="w-4 h-4 mr-2" />
