@@ -49,7 +49,7 @@ const Header = () => {
                   </Badge>
                 </div>
                 <span className="text-xs text-muted-foreground">
-                  by Poweredia • Creative Intelligence Lab
+                  by Poweredia
                 </span>
               </div>
             </div>
