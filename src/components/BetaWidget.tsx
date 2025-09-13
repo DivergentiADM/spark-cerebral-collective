@@ -44,13 +44,13 @@ const BetaWidget = () => {
           {/* Header */}
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-2">
-              <Zap className="w-5 h-5 text-soft-yellow animate-energy-pulse" />
+              <Zap className="w-5 h-5 text-orange-primary animate-energy-pulse" />
               <span className="font-bold text-lg bg-gradient-hero bg-clip-text text-transparent">
                 Inner Circle
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Solo <span className="font-bold text-soft-yellow">73 visionarios</span> restantes
+              Solo <span className="font-bold text-orange-primary shadow-orange">73 visionarios</span> restantes
             </p>
           </div>
 
@@ -102,10 +102,10 @@ const BetaWidget = () => {
 
           {/* CTA */}
           <Button 
-            className="w-full bg-gradient-hero hover:shadow-fuchsia transition-all duration-300 font-semibold border-0"
+            className="w-full bg-gradient-hero hover:shadow-orange-vibrant transition-all duration-300 font-semibold border-0"
             size="sm"
           >
-            <Users className="w-4 h-4 mr-2" />
+            <Users className="w-4 h-4 mr-2 text-orange-light" />
             Reservar mi lugar
           </Button>
           

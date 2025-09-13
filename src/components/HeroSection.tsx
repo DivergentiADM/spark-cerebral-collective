@@ -45,7 +45,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="text-lg px-8 py-4 rounded-full border-2 border-mediterranean-blue text-mediterranean-blue hover:bg-mediterranean-blue hover:text-white hover:shadow-blue transition-all duration-300"
+              className="text-lg px-8 py-4 rounded-full border-2 border-orange-primary text-orange-primary hover:bg-orange-primary hover:text-white hover:shadow-orange transition-all duration-300"
             >
               Ver Demo en Vivo
             </Button>
@@ -57,8 +57,8 @@ const HeroSection = () => {
           <Card className="p-8 bg-gradient-card shadow-fuchsia border-0 hover:shadow-intense transition-all duration-500">
             <div className="text-center">
               <div className="flex items-center justify-center mb-4">
-                <Brain className="w-8 h-8 text-bright-fuchsia mr-3 animate-pulse" />
-                <span className="text-3xl font-bold text-bright-fuchsia mr-2">2,847</span>
+                <Brain className="w-8 h-8 text-orange-primary mr-3 animate-pulse shadow-orange" />
+                <span className="text-3xl font-bold text-orange-primary mr-2 shadow-orange">2,847</span>
                 <span className="text-xl text-foreground/80">cerebros activos</span>
               </div>
               <div className="flex items-center justify-center text-lg text-muted-foreground">
@@ -73,8 +73,8 @@ const HeroSection = () => {
 
         {/* Exclusive Benefits */}
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <Card className="p-6 bg-gradient-card shadow-card border-0 hover:shadow-glow transition-all duration-300 text-center group">
-            <Brain className="w-12 h-12 text-electric-violet mx-auto mb-4 group-hover:animate-energy-pulse" />
+          <Card className="p-6 bg-gradient-card shadow-card border-0 hover:shadow-orange transition-all duration-300 text-center group">
+            <Brain className="w-12 h-12 text-orange-primary mx-auto mb-4 group-hover:animate-energy-pulse" />
             <h3 className="font-semibold text-lg mb-2">Cerebro Personalizado</h3>
             <p className="text-muted-foreground">Entrenado específicamente para tu industria y estilo</p>
           </Card>

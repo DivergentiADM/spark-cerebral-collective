@@ -149,10 +149,10 @@ const Header = () => {
             {/* Actions Section */}
             <div className="flex items-center space-x-4">
               {/* Brain Counter */}
-              <div className="hidden md:flex items-center space-x-2 bg-gradient-card border border-bright-fuchsia/20 rounded-full px-4 py-2 shadow-fuchsia hover:shadow-intense transition-all duration-300">
-                <Brain className="w-4 h-4 text-bright-fuchsia animate-energy-pulse" />
+              <div className="hidden md:flex items-center space-x-2 bg-gradient-card border border-orange-primary/20 rounded-full px-4 py-2 shadow-orange hover:shadow-orange-vibrant transition-all duration-300">
+                <Brain className="w-4 h-4 text-orange-primary animate-energy-pulse" />
                 <span className="text-sm font-semibold animate-counter-update">
-                  {activeCount.toLocaleString()} mentes colectivas activas
+                  <span className="text-orange-primary">{activeCount.toLocaleString()}</span> mentes colectivas activas
                 </span>
               </div>
 
@@ -190,13 +190,13 @@ const Header = () => {
           <div className="container mx-auto px-6 py-2">
             <div className="flex items-center justify-center space-x-8 text-sm">
               <div className="flex items-center space-x-2">
-                <Zap className="w-4 h-4 text-electric-violet animate-energy-pulse" />
+                <Zap className="w-4 h-4 text-orange-primary animate-energy-pulse" />
                 <span className="text-muted-foreground">Motor CAG™ procesando ideas</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Users className="w-4 h-4 text-mediterranean-blue" />
+                <Users className="w-4 h-4 text-orange-primary" />
                 <span className="text-muted-foreground">
-                  <span className="font-semibold text-foreground">347</span> visionarios ejecutando ahora
+                  <span className="font-semibold text-orange-primary">347</span> visionarios ejecutando ahora
                 </span>
               </div>
               <div className="flex items-center space-x-2">
