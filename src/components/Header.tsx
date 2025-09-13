@@ -1,33 +1,14 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import AtomIcon from "./AtomIcon";
-import { 
-  ChevronDown, 
-  Brain, 
-  Users, 
-  TrendingUp, 
-  Zap, 
-  LogIn,
-  Menu,
-  X,
-  Eye,
-  Heart,
-  GraduationCap,
-  HelpCircle,
-  Shield,
-  MapPin
-} from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { Users, TrendingUp, Zap, LogIn, Menu, X } from "lucide-react";
+import LogoCopya from "./LogoCopya";
+import BrainCounter from "./BrainCounter";
+import NavButton from "./NavButton";
+import DropdownRecursos from "./DropdownRecursos";
+import BotonComenzar from "./BotonComenzar";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeCount, setActiveCount] = useState(2846);
 
   return (
     <>
@@ -35,126 +16,22 @@ const Header = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo Section */}
-            <div className="flex items-center space-x-3">
-              <div className="relative group">
-                <div className="w-10 h-10 bg-gradient-hero rounded-full flex items-center justify-center shadow-glow hover:shadow-intense transition-all duration-300">
-                  <AtomIcon className="w-6 h-6 text-white" />
-                </div>
-              </div>
-              
-              <div className="flex flex-col">
-                <div className="flex items-center gap-2">
-                  <div className="relative group cursor-pointer">
-                    <span className="text-2xl font-bold bg-gradient-hero bg-clip-text text-transparent">
-                      COPYA.cl
-                    </span>
-                    <div className="absolute -bottom-8 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                      <div className="bg-background/95 backdrop-blur-sm border border-border/50 rounded-lg px-3 py-2 shadow-card">
-                        <p className="text-sm text-muted-foreground whitespace-nowrap">
-                          Tu cerebro creativo, amplificado por IA
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <Badge variant="secondary" className="bg-gradient-hero text-white border-0 text-xs px-2 py-1 font-medium animate-energy-pulse">
-                    APEX
-                  </Badge>
-                </div>
-                <span className="text-xs text-muted-foreground">
-                  by Poweredia
-                </span>
-              </div>
-            </div>
+            <LogoCopya />
 
             {/* Navigation Menu - Desktop */}
             <nav className="hidden lg:flex items-center space-x-8">
-              <a href="#demo" className="text-foreground/80 hover:text-foreground transition-colors story-link">
-                Demo
-              </a>
-              <a href="#journey" className="text-foreground/80 hover:text-foreground transition-colors story-link">
-                Paso a Paso
-              </a>
-              <a href="#cerebros" className="text-foreground/80 hover:text-foreground transition-colors story-link">
-                Cerebros
-              </a>
-              <a href="#pricing" className="text-foreground/80 hover:text-foreground transition-colors story-link">
-                Pricing
-              </a>
-              <a href="#casos" className="text-foreground/80 hover:text-foreground transition-colors story-link">
-                Casos
-              </a>
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <button className="flex items-center text-foreground/80 hover:text-foreground transition-colors group">
-                    Recursos
-                    <ChevronDown className="w-4 h-4 ml-1 group-data-[state=open]:rotate-180 transition-transform duration-200" />
-                  </button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent 
-                  className="w-80 p-2 bg-background/95 backdrop-blur-lg border border-border/50 shadow-card animate-fade-in"
-                  align="center"
-                  sideOffset={8}
-                >
-                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
-                    <Eye className="w-5 h-5 text-electric-violet mt-1 mr-3 group-hover:scale-110 transition-transform" />
-                    <div className="flex-1">
-                      <div className="font-semibold text-foreground mb-1">Building in Public</div>
-                      <div className="text-sm text-muted-foreground">Métricas reales y decisiones transparentes en tiempo real</div>
-                    </div>
-                  </DropdownMenuItem>
-                  
-                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
-                    <Heart className="w-5 h-5 text-bright-fuchsia mt-1 mr-3 group-hover:scale-110 transition-transform" />
-                    <div className="flex-1">
-                      <div className="font-semibold text-foreground mb-1">Alma del Equipo</div>
-                      <div className="text-sm text-muted-foreground">Conoce quiénes están detrás de COPYA y nuestra historia</div>
-                    </div>
-                  </DropdownMenuItem>
-                  
-                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
-                    <GraduationCap className="w-5 h-5 text-mediterranean-blue mt-1 mr-3 group-hover:scale-110 transition-transform" />
-                    <div className="flex-1">
-                      <div className="font-semibold text-foreground mb-1">COPYA Academy</div>
-                      <div className="text-sm text-muted-foreground">Educación premium gratuita para dominar la IA creativa</div>
-                    </div>
-                  </DropdownMenuItem>
-                  
-                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
-                    <HelpCircle className="w-5 h-5 text-financial-green mt-1 mr-3 group-hover:scale-110 transition-transform" />
-                    <div className="flex-1">
-                      <div className="font-semibold text-foreground mb-1">FAQ Completo</div>
-                      <div className="text-sm text-muted-foreground">Respuestas profundas sobre privacidad, uso y resultados</div>
-                    </div>
-                  </DropdownMenuItem>
-                  
-                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
-                    <Shield className="w-5 h-5 text-soft-yellow mt-1 mr-3 group-hover:scale-110 transition-transform" />
-                    <div className="flex-1">
-                      <div className="font-semibold text-foreground mb-1">Por qué COPYA</div>
-                      <div className="text-sm text-muted-foreground">Comparativas reales vs ChatGPT, sin login ni trucos</div>
-                    </div>
-                  </DropdownMenuItem>
-                  
-                  <DropdownMenuItem className="flex items-start p-4 rounded-lg hover:bg-gradient-subtle transition-all duration-300 cursor-pointer group">
-                    <MapPin className="w-5 h-5 text-electric-violet mt-1 mr-3 group-hover:scale-110 transition-transform" />
-                    <div className="flex-1">
-                      <div className="font-semibold text-foreground mb-1">Roadmap Público</div>
-                      <div className="text-sm text-muted-foreground">Explora próximas funciones y vota por nuevas ideas</div>
-                    </div>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <NavButton href="#demo">Demo</NavButton>
+              <NavButton href="#journey">Paso a Paso</NavButton>
+              <NavButton href="#cerebros">Cerebros</NavButton>
+              <NavButton href="#pricing">Pricing</NavButton>
+              <NavButton href="#casos">Casos</NavButton>
+              <DropdownRecursos />
             </nav>
 
             {/* Actions Section */}
             <div className="flex items-center space-x-4">
               {/* Brain Counter */}
-              <div className="hidden md:flex items-center space-x-2 bg-gradient-card border border-orange-primary/20 rounded-full px-4 py-2 shadow-orange hover:shadow-orange-vibrant transition-all duration-300">
-                <Brain className="w-4 h-4 text-orange-primary animate-energy-pulse" />
-                <span className="text-sm font-semibold animate-counter-update">
-                  <span className="text-orange-primary">{activeCount.toLocaleString()}</span> mentes colectivas activas
-                </span>
-              </div>
+              <BrainCounter />
 
               {/* Auth Buttons */}
               <Button 
@@ -166,13 +43,7 @@ const Header = () => {
                 Iniciar Sesión
               </Button>
               
-              <Button 
-                className="bg-gradient-hero hover:shadow-fuchsia transition-all duration-300 rounded-full font-semibold border-0"
-                size="sm"
-              >
-                <Zap className="w-4 h-4 mr-2" />
-                Comenzar
-              </Button>
+              <BotonComenzar />
 
               {/* Mobile Menu Button */}
               <button
@@ -240,12 +111,7 @@ const Header = () => {
                   <LogIn className="w-4 h-4 mr-2" />
                   Iniciar Sesión
                 </Button>
-                <Button 
-                  className="w-full bg-gradient-hero hover:shadow-fuchsia transition-all duration-300 border-0"
-                >
-                  <Zap className="w-4 h-4 mr-2" />
-                  Comenzar
-                </Button>
+                <BotonComenzar variant="mobile" />
               </div>
             </div>
           </div>
