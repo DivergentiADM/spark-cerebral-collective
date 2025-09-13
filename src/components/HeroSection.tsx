@@ -21,7 +21,7 @@ const HeroSection = () => {
         </div>
 
         {/* Main Hero Content */}
-        <div className="text-center max-w-4xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16 mt-32">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent leading-tight">
             Deja de usar IA genérica
           </h1>
