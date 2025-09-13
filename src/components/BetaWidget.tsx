@@ -31,8 +31,8 @@ const BetaWidget = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 animate-slide-in-right">
-      <Card className="bg-gradient-card border border-primary/20 shadow-intense p-6 max-w-sm animate-float">
+    <div className="fixed bottom-6 left-6 z-50 animate-slide-in-left md:animate-slide-in-right">
+      <Card className="bg-gradient-card border border-primary/20 shadow-intense p-6 max-w-sm animate-float inner-circle-left">
         <button 
           onClick={() => setIsVisible(false)}
           className="absolute top-2 right-2 text-muted-foreground hover:text-foreground transition-colors"
