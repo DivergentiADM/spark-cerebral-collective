@@ -72,7 +72,7 @@ const Header = () => {
                 Demo
               </a>
               <a href="#journey" className="text-foreground/80 hover:text-foreground transition-colors story-link">
-                Journey
+                Paso a Paso
               </a>
               <a href="#cerebros" className="text-foreground/80 hover:text-foreground transition-colors story-link">
                 Cerebros
@@ -217,7 +217,7 @@ const Header = () => {
                 Demo
               </a>
               <a href="#journey" className="block text-foreground/80 hover:text-foreground transition-colors py-2">
-                Journey
+                Paso a Paso
               </a>
               <a href="#cerebros" className="block text-foreground/80 hover:text-foreground transition-colors py-2">
                 Cerebros
