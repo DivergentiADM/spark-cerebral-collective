@@ -44,7 +44,7 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <Badge variant="secondary" className="bg-gradient-hero text-white border-0 font-semibold animate-energy-pulse">
+                  <Badge variant="secondary" className="bg-gradient-hero text-white border-0 text-xs px-2 py-1 font-medium animate-energy-pulse">
                     APEX
                   </Badge>
                 </div>
